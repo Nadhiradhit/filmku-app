@@ -1,8 +1,14 @@
 import React from 'react'
 
-function CardFooter() {
+type CardFooterProps = {
+    children: React.ReactNode;
+}
+function CardFooter(
+    {children}: CardFooterProps) {
     return (
-        <div>CardFooter</div>
+        <div className="">
+            {children}
+        </div>
     )
 }
 

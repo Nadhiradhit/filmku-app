@@ -2,15 +2,15 @@
 import Image from 'next/image'
 import React from 'react'
 
-function CardHeader() {
+type CardHeaderProps = {
+    children: React.ReactNode;
+}
+
+function CardHeader(
+    {children}: CardHeaderProps) {
     return (
         <div className="">
-            <Image
-                src={""}
-                width={100}
-                height={100}
-                alt="dummy-data"
-            />
+            {children}
         </div>
     )
 }

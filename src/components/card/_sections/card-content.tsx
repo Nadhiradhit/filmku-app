@@ -1,8 +1,15 @@
 import React from 'react'
 
-function CardContent() {
+type CardContentProps = {
+    children: React.ReactNode;
+}
+
+function CardContent(
+    {children}: CardContentProps) {
     return (
-        <div>CardContent</div>
+        <div className="">
+            {children}
+        </div>
     )
 }
 
