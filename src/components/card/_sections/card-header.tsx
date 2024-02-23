@@ -1,5 +1,4 @@
 "use client"
-import Image from 'next/image'
 import React from 'react'
 
 type CardHeaderProps = {
@@ -9,7 +8,7 @@ type CardHeaderProps = {
 function CardHeader(
     {children}: CardHeaderProps) {
     return (
-        <div className="">
+        <div className="text-start flex flex-col justify-center items-center h-full rounded-md ">
             {children}
         </div>
     )

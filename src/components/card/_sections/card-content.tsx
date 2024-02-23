@@ -7,7 +7,7 @@ type CardContentProps = {
 function CardContent(
     {children}: CardContentProps) {
     return (
-        <div className="">
+        <div className="bg-red-50">
             {children}
         </div>
     )
