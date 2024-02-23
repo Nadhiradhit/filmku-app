@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 function Dashboard() {
     return (
         <main className="w-full bg-blue-400 py-8 my-8">
-            <div className="max-w-screen-xl h-screen mx-auto">
+            <div className="max-w-screen-xl h-auto mx-auto">
                 <HeroSection/>
             </div>
         </main>       

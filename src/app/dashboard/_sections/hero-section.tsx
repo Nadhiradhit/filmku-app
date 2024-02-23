@@ -8,12 +8,9 @@ import useSWR from 'swr'
 function HeroSection() {
     
     return (
-        <section>
+        <section className="">
                 <h1 className="text-4xl font-body font-bold py-8 text-center">Dashboard</h1>
-                    <div className="flex flex-wrap justify-center gap-[1.5rem]"> 
-                        <Card imdbID={''}/>
-                        
-                    </div>
+                    <Card/>
         </section>
     )
 }
