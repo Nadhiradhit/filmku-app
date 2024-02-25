@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./styles/globals.css";
-import Header from "@/components/navbar/_header";
-import Footer from "@/components/footer/_footer";
+import Header from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const plusJakarta = Plus_Jakarta_Sans({ 
@@ -18,15 +18,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}:{
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${inter.className},${plusJakarta.className}`}>
+    <html lang="id">
+      <body className={`${inter.className},${plusJakarta.className} bg-[#1b1b1b]`}>
         <Header/>
-        {children}
-        <Footer/>
+          <main className="min-h-screen">
+            {children}
+          </main>
         </body>
     </html>
   );
