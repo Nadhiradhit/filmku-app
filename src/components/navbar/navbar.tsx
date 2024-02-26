@@ -6,10 +6,18 @@ import { motion } from "framer-motion"
 
 function Header() {
     return (
-        <section className="blur-navbar z-30  fixed top-0">
+        <section className="blur-navbar z-30 fixed top-0">
             <motion.div 
-            initial={{ y: -100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
+            initial={{ 
+                y: -100, 
+                opacity: 0 }}
+            animate={{ 
+                y: 0, 
+                opacity: 1 }}
+            transition={{
+                ease: 'easeInOut',
+                duration: 0.5,
+            }}
             className="">
                 <nav className="max-w-screen-xl mx-auto px-2 flex flex-wrap justify-between">
                     <Link
