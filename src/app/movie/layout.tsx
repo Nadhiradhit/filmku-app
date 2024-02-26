@@ -1,6 +1,6 @@
 import Footer from '@/components/footer/footer'
 import React, { Children } from 'react'
-
+import Header from "@/components/navbar/navbar";
 
 function MovieLayout({
     children,
@@ -9,6 +9,7 @@ function MovieLayout({
     }) {
     return (
         <>
+            <Header/>
             {children}
             <Footer/>
         </>
