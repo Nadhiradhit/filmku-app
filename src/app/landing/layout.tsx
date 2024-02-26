@@ -1,6 +1,6 @@
 import Footer from '@/components/footer/footer'
 import React, { Children } from 'react'
-
+import Header from "@/components/navbar/navbar";
 
 function LandingLayout({
     children,
@@ -8,7 +8,9 @@ function LandingLayout({
         children: React.ReactNode
     }) {
     return (
+        
         <>
+            <Header/>
             {children}
             <Footer/>
         </>
