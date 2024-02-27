@@ -12,6 +12,10 @@ export const links = [
     {
         name: "Movies",
         hash: "/movie",
+    },
+    {
+        name: "About",
+        hash: "/about",
     }
 ] as const;
 
