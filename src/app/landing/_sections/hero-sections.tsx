@@ -18,8 +18,8 @@ function HeroSection() {
             duration: 0.5,
         }}
         className="relative px-2 py-2">
-            <h1 className="text-6xl font-body font-bold uppercase text-center text-white">Welcome to FilmKu.com</h1>
-            <p className="text-2xl font-body font-semibold text-center text-gray-300 mt-2">Find Your 
+            <h1 className="text-5xl lg:text-6xl font-body font-bold uppercase text-center text-white">Welcome to FilmKu.com</h1>
+            <p className="text-lg lg:text-2xl font-body font-semibold text-center text-gray-300 mt-2">Find Your 
                 <motion.span 
                 animate={{ 
                     y: 100, 
@@ -33,7 +33,7 @@ function HeroSection() {
                 </motion.span>
             </p>
             <div className="flex flex-row justify-center items-center py-28  text-white">
-                <h1 className="text-5xl lg:text-6xl font-body font-bold mr-24">
+                <h1 className="text-5xl lg:text-6xl font-body font-bold lg:mr-24">
                     Filmku adalah <span className="text-gray-300"> Lorem ipsum, dolor sit amet </span> consectetur adipisicing elit. <span className="text-gray-300"> Repellendus sunt placeat saepe! </span>
                 </h1>
                 <motion.div
