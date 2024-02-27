@@ -22,7 +22,7 @@ function Card({imdbID}: any) {
 
     const filmResult :any = film?.Search
     if (isError) return <div>failed to load</div>
-    if (isLoading) return <div className="text-white">loading...</div>
+    if (isLoading) return <div className="flex justify-center items-center h-[50vh] text-white font-body font-bold text-3xl"> Basic Loading First !! </div>
     return (
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center w-full gap-12 mt-8 cursor-pointer">
             {filmResult.map((film: any, id: number) => (
