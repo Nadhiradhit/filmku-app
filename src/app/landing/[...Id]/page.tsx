@@ -16,9 +16,9 @@ function Movies({
     const data = movieData.find((data) => data.Id === params.Id[1])
     console.log(data)
     return (
-        <div className="w-full h-screen mt-28">
+        <div className="w-full min-h-screen mt-28">
             <div className="max-w-screen-xl mx-auto">  
-            <div className="flex items-center justify-center h-[75vh] gap-52">      
+            <div className="flex flex-col lg:flex-row items-center justify-center lg:h-[75vh] lg:gap-52">      
                 <Image
                 src={data?.Poster as string}
                 alt={"photo"}
