@@ -1,5 +1,4 @@
 import Footer from '@/components/footer/footer'
-import Header from '@/components/navbar/navbar'
 import React from 'react'
 
 function AboutLayout({
@@ -11,7 +10,6 @@ function AboutLayout({
     }) {
     return (
         <>
-        <Header/>
             <div className="flex gap-2 px-8 py-8 mt-28">
             {admin}
             {user}

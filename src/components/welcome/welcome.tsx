@@ -2,30 +2,36 @@
 import React from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { BsArrow90DegLeft, BsArrow90DegRight } from 'react-icons/bs'
 
 function WeclomeSection() {
     return (
         <motion.div 
         initial={{
-            x: -100,
             y: 100,
             opacity: 0,
         }}
         animate={{
-            x: 0,
             y: 0,
             opacity: 1,
         }}
         transition={{
             ease: 'easeInOut',
-            duration: 0.6,
+            duration: 1,
         }}
-        className="flex flex-col justify-center items-center h-[100vh]">
-                <h1 className="text-4xl text-center lg:text-6xl text-white font-bold">Hello, Hola, Welcome A board</h1>
-                    <Link 
-                    href={'/landing'}
-                    className="bg-orange-500 px-2 py-2 md:px-8 md:py-4 rounded-full text-white text-xl font-bold my-4 md:my-8"
-                    >To Dashboard</Link>
+        className="flex flex-col justify-center items-center min-h-screen w-full">
+                <h1 className="text-4xl text-center lg:text-[8rem] lg:leading-[8rem] text-white font-bold uppercase">Hello, <span className="text-gray-300"> Hola, </span> Welcome A board </h1>
+                    <motion.div 
+                    whileHover={{
+                        scale: [null, 1.4, 1.2],
+                    }}
+                    transition={{ 
+                        duration: 0.3 
+                    }}
+                    className="bg-orange-500 px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-lg lg:text-xl font-medium lg:font-bold my-4 md:my-8 flex items-center gap-2">
+                        <Link href={'/landing'}> To Dashboard </Link>
+                        <BsArrow90DegRight/>
+                    </motion.div>
         </motion.div>
     )
 }

@@ -4,7 +4,7 @@
 
 @layer utilities{
     .blur-navbar{
-        @apply bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full py-7 px-8 text-white bg-[#1b1b1b]/[0.2]; 
+        @apply bg-transparent shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] w-full py-7 px-8 text-white bg-[#1b1b1b]/[0.2]; 
     }
     .landing-skeleton{
         @apply rounded-lg w-full animate-pulse

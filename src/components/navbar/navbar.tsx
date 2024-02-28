@@ -1,33 +1,75 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { links } from '@/lib/data'
 import { motion } from "framer-motion"
 
+
+// const visibleNavbar = function() {
+//     const [isSticky, setIsSticky] = useState(false)
+
+//     const handleScrolling = function() {
+//         setIsSticky(window.scrollY > 0)
+//     }
+
+//     useEffect(() => {
+//         window.addEventListener('scroll', handleScrolling)
+//         return () => {
+//             window.removeEventListener('scroll', handleScrolling)
+//         }
+//     }, [])
+// }
+
 function Header() {
     return (
-        <section className="blur-navbar z-30 fixed top-0">
+        <section>
             <motion.div 
-            initial={{ 
-                y: -100, 
-                opacity: 0 }}
-            animate={{ 
-                y: 0, 
-                opacity: 1 }}
-            transition={{
-                ease: 'easeInOut',
-                duration: 0.5,
-            }}
-            data-item="navbar">
-                <nav className="max-w-screen-xl mx-auto px-2 flex flex-wrap justify-between">
-                    <Link
-                    href={'/'}
-                    target='_blank'
-                    className="font-semibold text-2xl font-plus-jakarta-sans"
+                initial={{
+                    opacity: 0,
+                    y: -100
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0
+                }}
+                
+                data-item="navbar"
+                className="blur-navbar fixed top-0 z-30"
+                >
+                <nav className="max-w-screen-2xl mx-auto px-2 flex flex-wrap justify-between">  
+                    <motion.div
+                        initial={{ 
+                            y: -100, 
+                            opacity: 0 }}
+                        animate={{ 
+                            y: 0, 
+                            opacity: 1 }}
+                        transition={{
+                            ease: 'easeInOut',
+                            duration: 0.5,
+                        }}
                     >
-                    FilmKu</Link>
-                    <div>
-                        <ul className="flex items-center justify-center mt-2 gap-2">
+                        <Link
+                            href={'/'}
+                            target='_blank'
+                            className="font-semibold text-2xl font-plus-jakarta-sans"
+                        >
+                            Film<span className="text-orange-500 text-lg font-bold">Ku</span>
+                        </Link>
+                    </motion.div>
+                    <motion.div
+                        initial={{ 
+                            x: 100, 
+                            opacity: 0 }}
+                        animate={{ 
+                            x: 0, 
+                            opacity: 1 }}
+                        transition={{
+                            ease: 'easeInOut',
+                            duration: 0.5,
+                        }}
+                    >
+                        <ul className="flex items-center justify-center gap-2">
                             {links.map((link) =>(
                                 <li
                                 
@@ -42,7 +84,7 @@ function Header() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    </motion.div>
                 </nav>
             </motion.div>
         </section>
