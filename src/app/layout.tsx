@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./styles/globals.css";
-
+import Header from '@/components/navbar/navbar'
 
 const inter = Inter({ subsets: ["latin"] });
 const plusJakarta = Plus_Jakarta_Sans({ 
@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={`${inter.className},${plusJakarta.className} bg-[#1b1b1b]`}>
+      <Header/>
           <main className="min-h-screen">
             {children}
           </main>
