@@ -1,8 +1,11 @@
-describe('template spec', () => {
-  it('passes', () => {
+describe('to landing', () => {
+  
+  it('passes dashboard', () => {
     cy.visit('localhost:3000')
+    cy.contains('To Dashboard').click()
   })
-  it('to landing', () => {
+
+  it('passes landing', () => {
     cy.visit('localhost:3000/landing')
   })
   

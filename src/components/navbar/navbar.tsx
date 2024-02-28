@@ -18,22 +18,23 @@ function Header() {
                 ease: 'easeInOut',
                 duration: 0.5,
             }}
-            className="">
+            data-item="navbar">
                 <nav className="max-w-screen-xl mx-auto px-2 flex flex-wrap justify-between">
                     <Link
                     href={'/'}
+                    target='_blank'
                     className="font-semibold text-2xl font-plus-jakarta-sans"
                     >
                     FilmKu</Link>
                     <div>
-                        <ul className="flex gap-2">
+                        <ul className="flex items-center justify-center mt-2 gap-2">
                             {links.map((link) =>(
                                 <li
                                 
                                 key={link.hash}
                                 >
                                 <Link
-                                
+                                target='_blank'
                                 href={link.hash}
                                 >
                                 {link.name}

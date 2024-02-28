@@ -17,7 +17,9 @@ function HeroSection() {
             ease: 'easeInOut',
             duration: 0.5,
         }}
-        className="relative px-2 py-2">
+        className="relative px-2 py-2"
+        data-item="hero-item"
+        >
             <h1 className="text-5xl lg:text-6xl font-body font-bold uppercase text-center text-white">Welcome to FilmKu.com</h1>
             <p className="text-lg lg:text-2xl font-body font-semibold text-center text-gray-300 mt-2">Find Your 
                 <motion.span 
@@ -28,7 +30,7 @@ function HeroSection() {
                     ease: 'easeInOut',
                     duration: 2,
                 }}
-                className="bg-orange-500 rounded-full px-2 ms-2 text-slate-950">
+                className="bg-orange-500 rounded-full py-1 px-2 ms-2 text-slate-950">
                     Favorite Movie!
                 </motion.span>
             </p>
