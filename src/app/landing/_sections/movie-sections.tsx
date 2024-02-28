@@ -21,7 +21,7 @@ function MovieSection() {
             duration: 0.5,
         }}
         
-        className="bg-orange-500 h-auto rounded-lg mb-28">
+        className="bg-orange-500 h-auto rounded-lg mb-28" data-item="movie-item">
             <div className="px-8 lg:px-16 py-16 flex flex-col justify-center justify-items-center">
                 <h1 className="text-3xl lg:text-5xl font-body font-bold text-[#1b1b1b]">More Video</h1>
                 <p className="text-lg lg:text-2xl font-body font-semibold text-[#1b1b1b]">Featuring the latest movies...</p>
