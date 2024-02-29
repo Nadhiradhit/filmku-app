@@ -26,7 +26,7 @@ function MovieSection() {
                 <h1 className="text-3xl lg:text-5xl font-body font-bold text-[#1b1b1b]">More Video</h1>
                 <p className="text-lg lg:text-2xl font-body font-semibold text-[#1b1b1b]">Featuring the latest movies...</p>
                 <div className="w-full">
-                    <div className="flex flex-wrap items-center py-2 gap-5">
+                    <div className="flex flex-wrap lg:justify-center items-center py-2 gap-5">
                         {
                             movieData.slice(0, 4).map((movie, index) => (
                                 <React.Fragment key={index}>
