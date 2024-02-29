@@ -3,7 +3,7 @@ import React from 'react'
 import useSWR from 'swr'
 import Image from 'next/image'
 
-const dataFetcher = (url: string) => fetch(`https://www.omdbapi.com/?s=all&plot=full&apikey=${process.env.NEXT_PUBLIC_FILM_API_KEY}`).then((res) => res.json())
+const dataFetcher = (url: string) => fetch(`https://www.omdbapi.com/?s=all&plot=full&apikey=${process.env.NEXT_PUBLIC_FILM_API_KEY}` , {cache: 'no-store'}).then((res) => res.json())
 
 function filmData(imdbID: string){
     const { data, error, isLoading} = useSWR(`/dashboard/${imdbID}`, dataFetcher)

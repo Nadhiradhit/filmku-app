@@ -29,7 +29,7 @@ function WeclomeSection() {
                         duration: 0.3 
                     }}
                     className="bg-orange-500 px-4 py-2 md:px-8 md:py-4 rounded-full text-white text-lg lg:text-xl font-medium lg:font-bold my-4 md:my-8 flex items-center gap-2">
-                        <Link href={'/landing'}> To Dashboard </Link>
+                        <Link href={'/landing'}> To Dashboard </Link> 
                         <BsArrow90DegRight/>
                     </motion.div>
         </motion.div>

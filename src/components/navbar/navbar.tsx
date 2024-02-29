@@ -66,17 +66,16 @@ function Header() {
                             opacity: 1 }}
                         transition={{
                             ease: 'easeInOut',
-                            duration: 0.5,
+                            duration: 0.9,
                         }}
                     >
-                        <ul className="flex items-center justify-center gap-2">
+                        <ul className="flex items-center justify-center gap-2 mt-2 lg:mt-0">
                             {links.map((link) =>(
                                 <li
                                 
                                 key={link.hash}
                                 >
                                 <Link
-                                target='_blank'
                                 href={link.hash}
                                 >
                                 {link.name}
