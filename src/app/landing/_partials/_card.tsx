@@ -11,7 +11,7 @@ function CardLanding({
     Id, Poster, Title, Type, Year, Describe
 }: MovieProps) { 
     return (
-        <div className="w-full lg:w-64 h-full rounded-lg px-1.5 py-2 bg-slate-100">
+        <div className="w-96 lg:w-64 h-full rounded-lg px-1.5 py-2 bg-slate-100">
             <div className="flex justify-center">
                 <Image
                 src={Poster}
