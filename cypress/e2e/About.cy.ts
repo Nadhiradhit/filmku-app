@@ -4,7 +4,7 @@ describe('To Check Link', () => {
     })
 
     it("Go to about page", () => {
-        cy.get('[data-item="navbar"]').contains("About").click
+        cy.get('navbar').contains("About").click
         cy.visit("localhost:3000/about")
     })
 

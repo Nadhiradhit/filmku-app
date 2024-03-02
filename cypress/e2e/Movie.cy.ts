@@ -4,7 +4,7 @@ describe('To Check Link', () => {
     })
 
     it("Go to movie page", () => {
-        cy.get('[data-item="navbar"]').contains("Movies").click
+        cy.get('navbar').contains("Movies").click
     })
     
 })
